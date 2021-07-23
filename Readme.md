@@ -1,7 +1,7 @@
 # Личный проект «Кэт энерджи»
 
 * Студент: [Марина Смирнова](https://up.htmlacademy.ru/adaptive/23/user/1717693).
-* Наставник: `Неизвестно`.
+* Наставник: [Егор Дьяченко](https://htmlacademy.ru/profile/semperhomolupus).
 
 ---
 
