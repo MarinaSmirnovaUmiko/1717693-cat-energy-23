@@ -31,92 +31,90 @@
       </nav>
     </header>
     <main class="page-main">
-      <h2 class="visually-hidden">CAT ENERGY - кошачий корм</h2>
-      <section class="introduction">
-        <div class="introduction__wrapper">
-          <div class="introduction__wrapper-about">
-            <h2 class="introduction__preview">Функциональное питание для котов</h2>
-            <h3 class="introduction__slogan">Занялся собой? Займись котом!</h3>
-          </div>
-          <div class="introduction__wrapper-form">
-            <img src="img/indexcanmobile1.png" width="280" height="270" alt="Коробка корма по форме как лапша Ролтон, c курицей, цвет ораннжевый, на крышке кот-супергерой">
-            <a class="introduction__wrapper-form-choose" href="form.html">Подбрать программу</a>
-          </div>
-        </div>
-      </section>
-      <section class="health-programs">
-        <div class="health-programs__wrapper">
-          <h3 class="visually-hidden">Выбрать программу оздоровления для кота</h3>
-          <ul class="health-programs__list">
-            <li class="health-programs__item">
-              <img class="health-programs__img" src="img/catback.svg" width="50" height="50" alt="Кот худой сидит">
-              <h3 class="health-programs__header">Похудение</h3>
-              <p class="health-programs__text">Ваш кот весит больше собаки и почти утратил способность лазить по деревьям? Пора на диету! Cat Energy Slim поможет вашему питомцу сбросить лишний вес.</p>
-              <a class="health-programs__form" href="form.html">Каталог SLIM</a>
-            </li>
-            <li class="health-programs__item">
-              <img class="health-programs__img" src="img/catback2.svg" width="68" height="50" alt="Кот-качок идет">
-              <h3 class="health-programs__header">Набор массы</h3>
-              <p class="health-programs__text">Заработать авторитет среди дворовых котов и даже собак? Серия Cat Energy Pro поможет вашему коту нарастить необходимые мышцы!</p>
-              <a class="health-programs__form" href="form.html">Каталог PRO</a>
-            </li>
-          </ul>
-        </div>
-      </section>
-      <section class="advantages">
-        <div class="advantages__wrapper">
-          <h2 class="advantages__header">Как это работает</h2>
-          <ul class="advantages__list">
-            <li class="advantages__item">
-              <img class="advantages__img" src="img/group1.svg" width="60" height="60" alt="Пиктограмма листочка">
-              <p class="advantages__text">Функциональное питание содержит только полезные питательные вещества.</p>
-            </li>
-            <li class="advantages__item">
-              <img class="advantages__img" src="img/group2.svg" width="60" height="60" alt="Пиктограмма стакана с водой и гранул">
-              <p class="advantages__text">Выпускается в виде порошка, который нужно лишь залить кипятком и готово.</p>
-            </li>
-            <li class="advantages__item">
-              <img class="advantages__img" src="img/group3.svg" width="60" height="60" alt="Пиктограмма вилки с ложкой">
-              <p class="advantages__text">Замените один-два приема обычной еды на наше функциональное питание.</p>
-            </li>
-            <li class="advantages__item">
-              <img class="advantages__img" src="img/group4.svg" width="60" height="60" alt="Пиктограмма будильника">
-              <p class="advantages__text">Уже через месяц наслаждайтесь изменениями к лучшему вашего питомца!</p>
-            </li>
-          </ul>
-        </div>
-      </section>
-      <section class="benefits">
-        <div class="benefits__wrapper">
-          <h3 class="visually-hidden">Пример кота, который похудео после использования корма Cat Energy</h3>
-          <h3 class="benefits__header">Живой пример</h3>
-          <p class="benefits__text">Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim. Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по 16 часов в день.</p>
-          <dl class="benefits__list">
-            <div class="benefits__item">
-              <dt class="benefits__number">5 КГ</dt>
-              <dd class="benefits__description">снижение<br>веса</dd>
+      <section class="form-send">
+        <div class="form-send__wrapper">
+          <h2 class="form-send__main-header">Подбор программы</h2>
+          <p class="form-send__text">Заполните анкету, и мы подберем программу питания для вашего кота</p>
+          <form class="form-send__cat" action="https://echo.htmlacademy.ru" method="post">
+            <p class="form-send__name">
+              <label class="form-send__label-name" for="name-cat">Имя:
+                <sup>*</sup>
+              </label>
+              <input class="form-send__input-name" id="name-cat" type="text" name="name" placeholder="Барсик">
+            </p>
+            <p class="form-send__weight">
+              <label class="form-send__label-weight" for="place-weight">Вес (кг):
+                <sup>*</sup>
+              </label>
+              <input class="form-send__input-weight" id="place-weight" type="number" name="weight" placeholder="7">
+            </p>
+            <p class="form-send__age">
+              <label class="form-send__label-age" for="place-age">Возраст (лет):</label>
+              <input class="form-send__input-age" id="place-age" type="number" name="age" placeholder="7">
+            </p>
+            <fieldset class="form-send__program">
+              <legend class="visually-hidden">Выбрать программу</legend>
+              <ul class="send-program__list">
+                <li class="send-program__item">
+                  <input class="send-program__input" type="radio" name="slim" id="filter-slim" checked>
+                  <label class="send-program__label" for="filter-slim">похудение</label>
+                </li>
+                <li class="send-program__item">
+                  <input class="send-program__input" type="radio" name="weight-gain" id="filter-weight-gain">
+                  <label class="send-program__label" for="filter-weight-gain">набор массы</label>
+                </li>
+                <li class="send-program__item">
+                  <input class="send-program__input" type="radio" name="help" id="filter-help">
+                  <label class="send-program__label" for="filter-help">Не знаю (Нужен ваш совет)</label>
+                </li>
+              </ul>
+            </fieldset>
+            <div class="form-send__cat-owner">
+              <h3 class="form-send__header">Контактные данные (владельца кота)</h3>
+              <p class="form-send__email">
+                <label class="form-send__label-email" for="place-email">E-mail:
+                  <sup>*</sup>
+                </label>
+                <input class="form-send__input-email" id="place-email" type="email" name="weight" placeholder="кuklachev@gmail.com">
+              </p>
+              <p class="form-send__phone">
+                <label class="form-send__label-phone" for="place-phone">Телефон:
+                  <sup>*</sup>
+                </label>
+                <input class="form-send__input-phone" id="place-phone" type="tel" name="phone" placeholder="8 (960) 900-60-90">
+              </p>
             </div>
-            <div class="benefits__item">
-              <dt class="benefits__number">60 дней</dt>
-              <dd class="benefits__description">затрачено<br>времени</dd>
+            <div class="form-send__cat-about">
+              <h3 class="form-send__header">Комментарий</h3>
+              <label class="visually-hidden" for="about-cat">Кратко о моем коте:</label>
+              <textarea class="form-send__textarea" id="about-cat" placeholder="Расскажите обо всех повадках кота" rows="8"></textarea>
             </div>
-          </dl>
-          <p class="benefits__sum">Затраты на питание: 15 000 руб.</p>
-          <div class="benefits__wrapper-img slider">
-            <ul class="benefits-img__list slider__list">
-              <li class="benefits-img__item slider__item">
-                <img class="benefits__photo" src="img/catfat.png" height="520" width="677" alt="Толстый котик">
-              </li>
-              <li class="benefits-img__item slider__item">
-                <img class="benefits__photo" src="img/catskinny.png" height="520" width="545" alt="Худой котик">
-              </li>
-            </ul>
-            <label class="benefits__label slider__label">
-              <span class="benefits__span slider__span">Было</span>
-              <input class="benefits__input slider__input" type="checkbox">
-              <span class="benefits__span slider__span">Стало</span>
-            </label>
-          </div>
+            <div class="form-send_additionally">
+              <h3 class="form-send__header">Дополнительно</h3>
+              <ul class="send-additionally__list">
+                <li class="send-additionally__item">
+                  <input class="send-additionally__input" type="checkbox" name="slim" id="filter-sugarfree" checked>
+                  <label class="send-additionally__label" for="filter-sugarfree">сахарозаменитель</label>
+                </li>
+                <li class="send-additionally__item">
+                  <input class="send-additionally__input" type="checkbox" name="weight-gain" id="filter-water">
+                  <label class="send-additionally__label" for="filter-water">питьевая вода</label>
+                </li>
+                <li class="send-additionally__item">
+                  <input class="send-additionally__input" type="checkbox" name="help" id="filter-milk">
+                  <label class="send-additionally__label" for="filter-milk">молоко</label>
+                </li>
+                <li class="send-additionally__item">
+                  <input class="send-additionally__input" type="checkbox" name="help" id="filter-vitamin">
+                  <label class="send-additionally__label" for="filter-vitamin">витамины</label>
+                </li>
+              </ul>
+            </div>
+            <button type="submit">отправить заявку</button>
+          </form>
+          <small>
+            <sup>*</sup> — Обязательные поля
+          </small>
         </div>
       </section>
     </main>
