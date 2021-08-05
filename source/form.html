@@ -3,6 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Кэт энерджи</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
   </head>
   <body class="page__body">
     <header class="page-header">
@@ -23,7 +24,7 @@
             <li class="site-list__item">
               <a href="catalog.html">Каталог продукции</a>
             </li>
-            <li>
+            <li class="site-list__item">
               <a href="form.html">Подбор программы</a>
             </li>
           </ul>
@@ -54,18 +55,18 @@
             </p>
             <fieldset class="form-send__program">
               <legend class="visually-hidden">Выбрать программу</legend>
-              <ul class="send-program__list">
-                <li class="send-program__item">
-                  <input class="send-program__input" type="radio" name="slim" id="filter-slim" checked>
-                  <label class="send-program__label" for="filter-slim">похудение</label>
+              <ul class="form-send-program__list">
+                <li class="form-send-program__item">
+                  <input class="form-send-program__input" type="radio" name="slim" id="filter-slim" checked>
+                  <label class="form-send-program__label" for="filter-slim">похудение</label>
                 </li>
-                <li class="send-program__item">
-                  <input class="send-program__input" type="radio" name="weight-gain" id="filter-weight-gain">
-                  <label class="send-program__label" for="filter-weight-gain">набор массы</label>
+                <li class="form-send-program__item">
+                  <input class="form-send-program__input" type="radio" name="weight-gain" id="filter-weight-gain">
+                  <label class="form-send-program__label" for="filter-weight-gain">набор массы</label>
                 </li>
-                <li class="send-program__item">
-                  <input class="send-program__input" type="radio" name="help" id="filter-help">
-                  <label class="send-program__label" for="filter-help">Не знаю (Нужен ваш совет)</label>
+                <li class="form-send-program__item">
+                  <input class="form-send-program__input" type="radio" name="help" id="filter-help">
+                  <label class="form-send-program__label" for="filter-help">Не знаю (Нужен ваш совет)</label>
                 </li>
               </ul>
             </fieldset>
@@ -91,28 +92,28 @@
             </div>
             <div class="form-send_additionally">
               <h3 class="form-send__header">Дополнительно</h3>
-              <ul class="send-additionally__list">
-                <li class="send-additionally__item">
-                  <input class="send-additionally__input" type="checkbox" name="slim" id="filter-sugarfree" checked>
-                  <label class="send-additionally__label" for="filter-sugarfree">сахарозаменитель</label>
+              <ul class="form-send-additionally__list">
+                <li class="form-send-additionally__item">
+                  <input class="form-send-additionally__input" type="checkbox" name="slim" id="filter-sugarfree" checked>
+                  <label class="form-send-additionally__label" for="filter-sugarfree">сахарозаменитель</label>
                 </li>
-                <li class="send-additionally__item">
-                  <input class="send-additionally__input" type="checkbox" name="weight-gain" id="filter-water">
-                  <label class="send-additionally__label" for="filter-water">питьевая вода</label>
+                <li class="form-send-additionally__item">
+                  <input class="form-send-additionally__input" type="checkbox" name="weight-gain" id="filter-water">
+                  <label class="form-send-additionally__label" for="filter-water">питьевая вода</label>
                 </li>
-                <li class="send-additionally__item">
-                  <input class="send-additionally__input" type="checkbox" name="help" id="filter-milk">
-                  <label class="send-additionally__label" for="filter-milk">молоко</label>
+                <li class="form-send-additionally__item">
+                  <input class="form-send-additionally__input" type="checkbox" name="help" id="filter-milk">
+                  <label class="form-send-additionally__label" for="filter-milk">молоко</label>
                 </li>
-                <li class="send-additionally__item">
-                  <input class="send-additionally__input" type="checkbox" name="help" id="filter-vitamin">
-                  <label class="send-additionally__label" for="filter-vitamin">витамины</label>
+                <li class="form-send-additionally__item">
+                  <input class="form-send-additionally__input" type="checkbox" name="help" id="filter-vitamin">
+                  <label class="form-send-additionally__label" for="filter-vitamin">витамины</label>
                 </li>
               </ul>
             </div>
-            <button type="submit">отправить заявку</button>
+            <button class="form-send__button" type="submit">отправить заявку</button>
           </form>
-          <small>
+          <small class="form-send__clarification">
             <sup>*</sup> — Обязательные поля
           </small>
         </div>
@@ -121,6 +122,7 @@
     <footer class="page-footer">
       <div class="page-footer__wrapper">
         <div class="page-footer__contacts">
+          <p class="page-footer__text">приглашаем к сотрудничеству дилеров!</p>
           <h4 class="visually-hidden">КАК НАС НАЙТИ</h4>
           <p class="contacts__adress">
             ул. Большая<br> Конюшенная, д. 19/8<br> Санкт-Петербург
