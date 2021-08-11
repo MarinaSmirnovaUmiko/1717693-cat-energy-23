@@ -2,50 +2,54 @@
 <html class="page" lang="ru">
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>HTML Academy: Кэт энерджи</title>
     <link rel="stylesheet" type="text/css" href="css/style.css">
   </head>
   <body class="page__body">
     <header class="page-header">
-      <a class="page-header__logo">
-        <img class="logo__text" src="img/logomobile.svg" width="34" height="38" alt="Логотип Cat Energy картинка">
-        <img class="logo__img" src="img/logo2.svg" width="101" height="18" alt="Логотип Cat Energy текст">
-      </a>
-      <h1 class="visually-hidden">Cat Energy</h1>
-      <nav class="main-nav">
-        <button class="main-nav__toggle" type="button">
-          <span class="visually-hidden">Открыть меню</span>
-        </button>
-        <div class="main-nav__wrapper">
-          <ul class="main-nav__list site-list">
-            <li class="site-list__item site-list__item--activa">
-              <a href="index.html">Главная</a>
-            </li>
-            <li class="site-list__item">
-              <a href="catalog.html">Каталог продукции</a>
-            </li>
-            <li class="site-list__item">
-              <a href="form.html">Подбор программы</a>
-            </li>
-          </ul>
-        </div>
-      </nav>
-    </header>
-    <main class="page-main">
-      <h2 class="visually-hidden">CAT ENERGY - кошачий корм</h2>
+      <div class="page-header__wrapper">
+        <a class="page-header__logo">
+          <img class="logo__text" src="img/logomobile.svg" width="34" height="38" alt="Логотип Cat Energy картинка">
+          <img class="logo__img" src="img/logo2.svg" width="101" height="18" alt="Логотип Cat Energy текст">
+        </a>
+        <h1 class="visually-hidden">Cat Energy</h1>
+        <nav class="main-nav">
+          <button class="main-nav__toggle" type="button">
+            <span class="visually-hidden">Открыть меню</span>
+          </button>
+          <div class="main-nav__wrapper">
+            <ul class="main-nav__list site-list">
+              <li class="site-list__item site-list__item--activa">
+                <a href="index.html">Главная</a>
+              </li>
+              <li class="site-list__item">
+                <a href="catalog.html">Каталог продукции</a>
+              </li>
+              <li class="site-list__item">
+                <a href="form.html">Подбор программы</a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </div>
       <section class="introduction">
         <div class="introduction__wrapper">
-          <div class="introduction__wrapper-about">
-            <h2 class="introduction__preview">Функциональное питание для котов</h2>
-            <h3 class="introduction__slogan">Занялся собой? Займись котом!</h3>
-          </div>
-          <div class="introduction__background-img"></div>
+          <div class="introduction__background-img"><img src="img/catbg.jpg" width="320" height="302" alt="Фон коша облизывается"></div>
+          <div class="introduction__filter"></div>
           <div class="introduction__wrapper-form">
+            <div class="introduction__wrapper-about">
+              <h2 class="introduction__preview">Функциональное питание для котов</h2>
+              <h3 class="introduction__slogan">Занялся собой? Займись котом!</h3>
+              <a class="introduction__wrapper-form-choose" href="form.html">Подбрать программу</a>
+            </div>
             <img src="img/indexcanmobile1.png" width="280" height="270" alt="Коробка корма по форме как лапша Ролтон, c курицей, цвет ораннжевый, на крышке кот-супергерой">
-            <a class="introduction__wrapper-form-choose" href="form.html">Подбрать программу</a>
           </div>
         </div>
       </section>
+    </header>
+    <main class="page-main">
+      <h2 class="visually-hidden">CAT ENERGY - кошачий корм</h2>
       <section class="health-programs">
         <div class="health-programs__wrapper">
           <h3 class="visually-hidden">Выбрать программу оздоровления для кота</h3>
@@ -90,27 +94,31 @@
       </section>
       <section class="benefits">
         <div class="benefits__wrapper">
-          <h3 class="visually-hidden">Пример кота, который похудел после использования корма Cat Energy</h3>
-          <h3 class="benefits__header">Живой пример</h3>
-          <p class="benefits__text">Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim. Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по 16 часов в день.</p>
-          <dl class="benefits__list">
-            <div class="benefits__item">
-              <dt class="benefits__number">5 КГ</dt>
-              <dd class="benefits__description">снижение<br>веса</dd>
+          <div class="benefits__sample">
+            <h3 class="visually-hidden">Пример кота, который похудел после использования корма Cat Energy</h3>
+            <h3 class="benefits__header">Живой пример</h3>
+            <div class="benefits__features">
+              <p class="benefits__text">Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim. Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по 16 часов в день.</p>
+              <dl class="benefits__list">
+                <div class="benefits__item">
+                  <dt class="benefits__number">5 КГ</dt>
+                  <dd class="benefits__description">снижение<br>веса</dd>
+                </div>
+                <div class="benefits__item">
+                  <dt class="benefits__number">60 дней</dt>
+                  <dd class="benefits__description">затрачено<br>времени</dd>
+                </div>
+              </dl>
+              <p class="benefits__sum">Затраты на питание: 15 000 руб.</p>
             </div>
-            <div class="benefits__item">
-              <dt class="benefits__number">60 дней</dt>
-              <dd class="benefits__description">затрачено<br>времени</dd>
-            </div>
-          </dl>
-          <p class="benefits__sum">Затраты на питание: 15 000 руб.</p>
+          </div>
           <div class="benefits__wrapper-img slider">
             <ul class="benefits-img__list slider__list">
               <li class="benefits-img__item slider__item">
-                <img class="benefits__photo" src="img/catfat.png" height="520" width="677" alt="Толстый котик">
+                <img class="benefits__photo" src="img/beforemobile1.png" height="232" width="311" alt="Толстый котик">
               </li>
               <li class="benefits-img__item slider__item">
-                <img class="benefits__photo" src="img/catskinny.png" height="520" width="545" alt="Худой котик">
+                <img class="benefits__photo" src="img/catskinny.png" height="232" width="311" alt="Худой котик">
               </li>
             </ul>
             <label class="benefits__label slider__label">
@@ -134,6 +142,11 @@
         <div class="page-footer__map">
           <img class="map__footer" src="img/mapcatenergy.jpg" height="362" width="320" alt="Карта где найти магазин">
         </div>
+        <div class="page-footer__exact-adress">
+          <img src="img/mappin.png" height="53" width="57" alt="В точност гле">
+        </div>
+      </div>
+      <section class="page-footer__net">
         <div class="page-footer__logo">
           <svg width="128" height="24" viewBox="0 0 128 24" fill="none" xmlns="http://www.w3.org/2000/svg">
             <g clip-path="url(#clip0)">
@@ -170,7 +183,7 @@
         <div class="page-footer__copyright copyright">
           <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
         </div>
-      </div>
+      </section>
     </footer>
   </body>
 </html>
