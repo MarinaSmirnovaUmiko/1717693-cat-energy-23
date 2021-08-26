@@ -2,11 +2,12 @@
 <html class="page" lang="ru">
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>HTML Academy: Кэт энерджи</title>
     <link rel="stylesheet" type="text/css" href="css/style.css">
   </head>
   <body class="page__body">
-    <header class="page-header">
+    <header class="page-header-catalog">
       <a class="page-header__logo">
         <img class="logo__text" src="img/logomobile.svg" width="34" height="38" alt="Логотип Cat Energy картинка">
         <img class="logo__img" src="img/logo2.svg" width="101" height="18" alt="Логотип Cat Energy текст">
@@ -36,7 +37,7 @@
         <h2 class="main-header">Каталог продукции</h2>
       </section>
       <section class="goods">
-        <div class="goods__wrapper">
+        <div class="goods__list-wrapper">
           <ul class="goods__list">
             <li class="goods__item">
               <div class="goods__wrapper">
@@ -227,68 +228,84 @@
                 <a class="goods__button">Заказать</a>
               </div>
             </li>
-          </ul>
-          <div class="goods__more">
-            <h4 class="goods__more-header">Показать еще 100500 товаров</h4>
-            <p class="goods__more-text">На самом деле вкусов гораздо больше!</p>
-            <a class="goods__more-button" href="#">Показать все</a>
-          </div>
-        </div>
-      </section>
-      <section class="add">
-        <div class="add__wrapper">
-          <h3 class="add__main-header">Дополнительные товары</h3>
-          <ul class="add__list">
-            <li class="add__item">
-              <h4 class="add__header">Сахарозаменитель</h4>
-              <dl class="add__features-list">
-                <div class="add__features-item">
-                  <dt class="add__quantity">1 упаковка (100 г)</dt>
-                  <dd class="add__price">200 Р.</dd>
-                </div>
-              </dl>
-              <a class="add__button" href="#">Заказать</a>
-            </li>
-            <li class="add__item">
-              <h4 class="add__header">питьевая вода</h4>
-              <dl class="add__features-list">
-                <div class="add__features-item">
-                  <dt class="add__quantity">5 литров</dt>
-                  <dd class="add__price">50 Р.</dd>
-                </div>
-              </dl>
-              <a class="add__button" href="#">Заказать</a>
-            </li>
-            <li class="add__item">
-              <h4 class="add__header">молоко</h4>
-              <dl class="add__features-list">
-                <div class="add__features-item">
-                  <dt class="add__quantity">1 литр</dt>
-                  <dd class="add__price">100 Р.</dd>
-                </div>
-              </dl>
-              <a class="add__button" href="#">Заказать</a>
-            </li>
-            <li class="add__item">
-              <h4 class="add__header">витамины</h4>
-              <dl class="add__features-list">
-                <div class="add__features-item">
-                  <dt class="add__quantity">1 упаковка (30 г)</dt>
-                  <dd class="add__price">300 Р.</dd>
-                </div>
-              </dl>
-              <a class="add__button" href="#">Заказать</a>
+            <li class="goods__item">
+              <div class="goods__more">
+                <h4 class="goods__more-header">Показать еще 100500 товаров</h4>
+                <p class="goods__more-text">На самом деле вкусов гораздо больше!</p>
+                <a class="goods__more-button" href="#">Показать все</a>
+              </div>
             </li>
           </ul>
         </div>
       </section>
-      <section class="choose-all">
-        <div class="choose-all__wrapper">
-          <div class="choose-all__main">
-            <img class="choose-all__img" src="img/gift.svg" width="78" height="80" alt="пиктограмма подарака">
-            <p class="choose-all__text">Закажите все и получите чехол для кота в подарок!</p>
-          </div>
-        </div>
+      <section class="more">
+        <section class="main-header">
+          <h3 class="main-header__styles">Дополнительные товары</h3>
+        </section>
+        <section class="add-choose-wrapper">
+          <section class="add">
+            <div class="add__wrapper">
+              <ul class="add__list">
+                <li class="add__item">
+                  <div class="add__item-wrapper">
+                    <h4 class="add__header">Сахарозаменитель</h4>
+                    <dl class="add__features-list">
+                      <div class="add__features-item">
+                        <dt class="add__quantity">1 упаковка (100 г)</dt>
+                        <dd class="add__price">200 Р.</dd>
+                      </div>
+                    </dl>
+                  </div>
+                  <a class="add__button" href="#">Заказать</a>
+                </li>
+                <li class="add__item">
+                  <div class="add__item-wrapper">
+                    <h4 class="add__header">питьевая вода</h4>
+                    <dl class="add__features-list">
+                      <div class="add__features-item">
+                        <dt class="add__quantity">5 литров</dt>
+                        <dd class="add__price">50 Р.</dd>
+                      </div>
+                    </dl>
+                  </div>
+                  <a class="add__button" href="#">Заказать</a>
+                </li>
+                <li class="add__item">
+                  <div class="add__item-wrapper">
+                    <h4 class="add__header">молоко</h4>
+                    <dl class="add__features-list">
+                      <div class="add__features-item">
+                        <dt class="add__quantity">1 литр</dt>
+                        <dd class="add__price">100 Р.</dd>
+                      </div>
+                    </dl>
+                  </div>
+                  <a class="add__button" href="#">Заказать</a>
+                </li>
+                <li class="add__item">
+                  <div class="add__item-wrapper">
+                    <h4 class="add__header">витамины</h4>
+                    <dl class="add__features-list">
+                      <div class="add__features-item">
+                        <dt class="add__quantity">1 упаковка (30 г)</dt>
+                        <dd class="add__price">300 Р.</dd>
+                      </div>
+                    </dl>
+                  </div>
+                  <a class="add__button" href="#">Заказать</a>
+                </li>
+              </ul>
+            </div>
+          </section>
+          <section class="choose-all">
+            <div class="choose-all__wrapper">
+              <div class="choose-all__main">
+                <img class="choose-all__img" src="img/gift.svg" width="78" height="80" alt="пиктограмма подарака">
+                <p class="choose-all__text">Закажите все и получите чехол для кота в подарок!</p>
+              </div>
+            </div>
+          </section>
+        </section>
       </section>
     </main>
     <footer class="page-footer">

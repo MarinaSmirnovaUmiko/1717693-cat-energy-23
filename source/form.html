@@ -2,11 +2,12 @@
 <html class="page" lang="ru">
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>HTML Academy: Кэт энерджи</title>
     <link rel="stylesheet" type="text/css" href="css/style.css">
   </head>
   <body class="page__body">
-    <header class="page-header">
+    <header class="page-header-form">
       <a class="page-header__logo">
         <img class="logo__text" src="img/logomobile.svg" width="34" height="38" alt="Логотип Cat Energy картинка">
         <img class="logo__img" src="img/logo2.svg" width="101" height="18" alt="Логотип Cat Energy текст">
@@ -34,64 +35,84 @@
     <main class="page-main-form">
       <section class="form-send">
         <div class="form-send__wrapper">
-          <h2 class="form-send__main-header">Подбор программы</h2>
-          <p class="form-send__text">Заполните анкету, и мы подберем программу питания для вашего кота</p>
+          <div class="form-send__main-header-wrapper">
+            <h2 class="form-send__main-header">Подбор программы</h2>
+          </div>
+          <div class="form-send__text-wrapper">
+            <p class="form-send__text">Заполните анкету, и мы подберем<br> программу питания для вашего кота</p>
+          </div>
           <form class="form-send__cat" action="https://echo.htmlacademy.ru" method="post">
-            <p class="form-send__name">
-              <label class="form-send__label-name" for="name-cat">Имя:
-                <sup>*</sup>
-              </label>
-              <input class="form-send__input-name" id="name-cat" type="text" name="name" placeholder="Барсик">
-            </p>
-            <p class="form-send__weight">
-              <label class="form-send__label-weight" for="place-weight">Вес (кг):
-                <sup>*</sup>
-              </label>
-              <input class="form-send__input-weight" id="place-weight" type="number" name="weight" placeholder="7">
-            </p>
-            <p class="form-send__age">
-              <label class="form-send__label-age" for="place-age">Возраст (лет):</label>
-              <input class="form-send__input-age" id="place-age" type="number" name="age" placeholder="7">
-            </p>
-            <fieldset class="form-send__program">
-              <legend class="visually-hidden">Выбрать программу</legend>
-              <ul class="form-send-program__list">
-                <li class="form-send-program__item">
-                  <input class="form-send-program__input" type="radio" name="slim" id="filter-slim" checked>
-                  <label class="form-send-program__label" for="filter-slim">похудение</label>
+            <div class="form-send__name-program-wrapper">
+              <div class="form-send__name-wrapper">
+                <p class="form-send__name">
+                  <label class="form-send__label-name" for="name-cat">Имя:
+                    <sup>*</sup>
+                  </label>
+                  <input class="form-send__input-name" id="name-cat" type="text" name="name" placeholder="Барсик">
+                </p>
+                <p class="form-send__weight">
+                  <label class="form-send__label-weight" for="place-weight">Вес (кг):
+                    <sup>*</sup>
+                  </label>
+                  <input class="form-send__input-weight" id="place-weight" type="number" name="weight" placeholder="7">
+                </p>
+                <p class="form-send__age">
+                  <label class="form-send__label-age" for="place-age">Возраст (лет):</label>
+                  <input class="form-send__input-age" id="place-age" type="number" name="age" placeholder="7">
+                </p>
+              </div>
+              <fieldset class="form-send__program">
+                <legend class="visually-hidden">Выбрать программу</legend>
+                <ul class="form-send-program__list">
+                  <li class="form-send-program__item">
+                    <input class="form-send-program__input" type="radio" name="slim" id="filter-slim" checked>
+                    <label class="form-send-program__label" for="filter-slim">похудение</label>
+                  </li>
+                  <li class="form-send-program__item">
+                    <input class="form-send-program__input" type="radio" name="weight-gain" id="filter-weight-gain">
+                    <label class="form-send-program__label" for="filter-weight-gain">набор массы</label>
+                  </li>
+                  <li class="form-send-program__item">
+                    <input class="form-send-program__input" type="radio" name="help" id="filter-help">
+                    <label class="form-send-program__label" for="filter-help">Не знаю (Нужен ваш совет)</label>
+                  </li>
+                </ul>
+              </fieldset>
+            </div>
+            <div class="form-send__cat-owner">
+              <div class="form-send__header-wrapper">
+                <h3 class="form-send__header">Контактные данные (владельца кота)</h3>
+              </div>
+              <ul class="form-send__list">
+                <li class="form-send__item">
+                  <p class="form-send__email">
+                    <label class="form-send__label-email" for="place-email">E-mail:
+                      <sup>*</sup>
+                    </label>
+                    <input class="form-send__input-email" id="place-email" type="email" name="weight" placeholder="кuklachev@gmail.com">
+                  </p>
                 </li>
-                <li class="form-send-program__item">
-                  <input class="form-send-program__input" type="radio" name="weight-gain" id="filter-weight-gain">
-                  <label class="form-send-program__label" for="filter-weight-gain">набор массы</label>
-                </li>
-                <li class="form-send-program__item">
-                  <input class="form-send-program__input" type="radio" name="help" id="filter-help">
-                  <label class="form-send-program__label" for="filter-help">Не знаю (Нужен ваш совет)</label>
+                <li>
+                  <p class="form-send__phone">
+                    <label class="form-send__label-phone" for="place-phone">Телефон:
+                      <sup>*</sup>
+                    </label>
+                    <input class="form-send__input-phone" id="place-phone" type="tel" name="phone" placeholder="8 (960) 900-60-90">
+                  </p>
                 </li>
               </ul>
-            </fieldset>
-            <div class="form-send__cat-owner">
-              <h3 class="form-send__header">Контактные данные (владельца кота)</h3>
-              <p class="form-send__email">
-                <label class="form-send__label-email" for="place-email">E-mail:
-                  <sup>*</sup>
-                </label>
-                <input class="form-send__input-email" id="place-email" type="email" name="weight" placeholder="кuklachev@gmail.com">
-              </p>
-              <p class="form-send__phone">
-                <label class="form-send__label-phone" for="place-phone">Телефон:
-                  <sup>*</sup>
-                </label>
-                <input class="form-send__input-phone" id="place-phone" type="tel" name="phone" placeholder="8 (960) 900-60-90">
-              </p>
             </div>
             <div class="form-send__cat-about">
-              <h3 class="form-send__header">Комментарий</h3>
+              <div class="form-send__wrapper-cat">
+                <h3 class="form-send__header-cat form-send__header">Комментарий</h3>
+              </div>
               <label class="visually-hidden" for="about-cat">Кратко о моем коте:</label>
               <textarea class="form-send__textarea" id="about-cat" placeholder="Расскажите обо всех повадках кота" rows="8"></textarea>
             </div>
-            <div class="form-send_additionally">
-              <h3 class="form-send__header">Дополнительно</h3>
+            <div class="form-send__additionally">
+              <div class="form-send__header-wrapper-additionally">
+                <h3 class="form-send__header">Дополнительно</h3>
+              </div>
               <ul class="form-send-additionally__list">
                 <li class="form-send-additionally__item">
                   <input class="form-send-additionally__input" type="checkbox" name="slim" id="filter-sugarfree" checked>
@@ -111,11 +132,13 @@
                 </li>
               </ul>
             </div>
-            <button class="form-send__button" type="submit">отправить заявку</button>
+            <div class="form-send__submit">
+              <button class="form-send__button" type="submit">отправить заявку</button>
+              <small class="form-send__clarification">
+                <sup>*</sup> — Обязательные поля
+              </small>
+            </div>
           </form>
-          <small class="form-send__clarification">
-            <sup>*</sup> — Обязательные поля
-          </small>
         </div>
       </section>
     </main>

@@ -17,9 +17,20 @@
 
 .advantages__list {
   display: flex;
-  flex-direction: row;
-  justify-content: space-between;
+  flex-wrap: wrap;
   min-height: 300px;
+  justify-content: center;
+  align-content: center;
+  width: 279px;
+  padding-right: 21px;
+  padding-left: 20px;
+}
+
+.advantages__item {
+  min-height: 280px;
+  width: 279px;
+  padding: 0;
+  margin-bottom: 26px;
 }
 
 @media (min-width: @tablet-width) {

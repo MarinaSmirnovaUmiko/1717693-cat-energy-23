@@ -9,3 +9,23 @@
   min-height: 100%;
   margin: 0;
 }
+
+@media (min-width: @mobile-width-only) {
+  .page__body {
+    width: 320px;
+    min-height: 2135px;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .page__body {
+    width: 768px;
+    min-height: 2707px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .page__body {
+    width: 1440px;
+  }
+}
